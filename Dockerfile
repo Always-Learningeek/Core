@@ -17,7 +17,7 @@ COPY requirements.txt  /app/
 # Upgrade pip
 RUN pip3 install --upgrade pip
 # run this command to install all dependencies
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 
 # Copy the Django project to the container
