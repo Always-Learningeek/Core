@@ -9,5 +9,6 @@ services:
      - ./:/app
     ports:
      - "8000:8000"
-#    environment:
-#      name-value
+    environment:
+      - SECRET_KEY=test
+      - DEBUG=True
