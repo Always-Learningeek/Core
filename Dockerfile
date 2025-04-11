@@ -1,5 +1,5 @@
 # Use the official Python runtime image
-FROM python:3.12
+FROM python:3.9
 
 # Set environment variables
 # Prevents Python from writing pyc files to disk
@@ -15,13 +15,13 @@ WORKDIR /app
 COPY requirements.txt  /app/
 
 # Upgrade pip
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 # run this command to install all dependencies
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 
 # Copy the Django project to the container
-COPY . /app
+COPY ./ /app
 
 # Run Django’s development server
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
