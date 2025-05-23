@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'accounts',
     'blog',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
