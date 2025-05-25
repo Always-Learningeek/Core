@@ -8,12 +8,14 @@ from django.shortcuts import get_object_or_404
 
 @api_view()
 def api_v1_post_list(request):
-    return Response("ok!")
+    posts = Post.objects.filter(status=True)
+    serializer = PostSerializer(posts, many=True)
+    return Response(serializer.data)
 
 
 @api_view()
 def api_v1_post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+    post = get_object_or_404(Post, pk=pk, status=True)
     serializer = PostSerializer(post)
     return Response(serializer.data)
 
