@@ -19,7 +19,7 @@ def api_v1_post_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-@api_view(["GET", "PUT"])
+@api_view(["GET", "PUT", "DELETE"])
 def api_v1_post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk, status=True)
     if request.method == "GET" :
@@ -30,3 +30,6 @@ def api_v1_post_detail(request, pk):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
+    elif request.method == "DELETE" :
+        post.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
