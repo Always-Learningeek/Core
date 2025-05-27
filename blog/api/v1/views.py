@@ -24,6 +24,8 @@ def api_v1_post_list(request):
 '''
 
 class PostList(APIView):
+    permission_classes = [IsAuthenticatedOrReadOnly]
+    serializer_class = PostSerializer
 
     def get(self, request):
         posts = Post.objects.filter(status=True)
