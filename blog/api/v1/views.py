@@ -1,5 +1,6 @@
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 from rest_framework.response import Response
 from .serializers import PostSerializer
 from ...models import Post
@@ -7,6 +8,7 @@ from django.shortcuts import get_object_or_404
 
 
 @api_view(["GET", "POST"])
+@permission_classes([IsAuthenticatedOrReadOnly])
 def api_v1_post_list(request):
     if request.method == "GET" :
         posts = Post.objects.filter(status=True)
@@ -20,6 +22,7 @@ def api_v1_post_list(request):
 
 
 @api_view(["GET", "PUT", "DELETE"])
+@permission_classes([IsAuthenticated])
 def api_v1_post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk, status=True)
     if request.method == "GET" :
