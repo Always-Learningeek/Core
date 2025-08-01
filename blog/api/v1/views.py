@@ -1,3 +1,4 @@
+from django.core.serializers import serialize
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
@@ -39,7 +40,7 @@ class PostList(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-
+'''
 @api_view(["GET", "PUT", "DELETE"])
 @permission_classes([IsAuthenticated])
 def api_v1_post_detail(request, pk):
@@ -55,3 +56,32 @@ def api_v1_post_detail(request, pk):
     elif request.method == "DELETE" :
         post.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+'''
+
+#CBV-Base
+class PostDetail(APIView):
+    permission_classes = [IsAuthenticatedOrReadOnly]
+    serializer_class = PostSerializer
+
+    def get(self, request, pk):
+        """ Retrieve the post data """
+        post = get_object_or_404(Post, pk=pk, status=True)
+        serializer = self.serializer_class(post)
+        return Response(serializer.data)
+
+    def put(self, request, pk):
+        """ Update the post data """
+        post = get_object_or_404(Post, pk=pk, status=True)
+        serializer = self.serializer_class(post, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+
+    def delete(self, request, pk):
+        """ Delete the post data """
+        post = get_object_or_404(Post, pk=pk, status=True)
+        post.delete()
+        context = {
+            "detail" : "Post deleted successfully"
+        }
+        return Response(context, status=status.HTTP_204_NO_CONTENT)
