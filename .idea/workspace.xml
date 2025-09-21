@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d28df543-2682-4988-9624-899089d05452" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/api/v1/paginations.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/api/v1/paginations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/api/v1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/api/v1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,7 @@
       <list>
         <option value="Dockerfile" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,18 +39,23 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2vWTDKaNzhpEBl1bZ8i1zjobzeH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Django Server.Core.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "N:/Core/Core/settings.py",
+    "last_opened_file_path": "N:/Core/statics/accounts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,7 +66,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="N:\Core\statics\accounts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="N:\Core\templates\registration" />
+      <recent name="N:\Core\templates\accounts" />
+      <recent name="N:\Core\templates" />
+      <recent name="N:\Core\templates\accounts\registration" />
       <recent name="N:\Core\blog\api\v1" />
     </key>
   </component>
@@ -242,7 +258,13 @@
       <workItem from="1756441709601" duration="37000" />
       <workItem from="1758103028867" duration="1243000" />
       <workItem from="1758105131148" duration="2013000" />
-      <workItem from="1758095030880" duration="26342000" />
+      <workItem from="1758095030880" duration="28873000" />
+      <workItem from="1758127522266" duration="4284000" />
+      <workItem from="1758378321309" duration="833000" />
+      <workItem from="1758382263283" duration="390000" />
+      <workItem from="1758383008869" duration="141000" />
+      <workItem from="1758383158729" duration="123000" />
+      <workItem from="1758482032757" duration="8093000" />
     </task>
     <servers />
   </component>
