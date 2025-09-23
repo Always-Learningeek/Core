@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d28df543-2682-4988-9624-899089d05452" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Core/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/api/v1/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/api/v1/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/api/v1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/api/v1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/api/v1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/api/v1/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +62,16 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\win11\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="ef09c0e7-1eb3-4bd5-9f80-746b784e671b" reportId="Core/qodana/2025-09-23" />
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="N:\Core\statics\accounts" />
@@ -264,7 +272,8 @@
       <workItem from="1758383008869" duration="141000" />
       <workItem from="1758383158729" duration="123000" />
       <workItem from="1758482032757" duration="10839000" />
-      <workItem from="1758531068847" duration="17116000" />
+      <workItem from="1758531068847" duration="22616000" />
+      <workItem from="1758616733942" duration="6798000" />
     </task>
     <servers />
   </component>
